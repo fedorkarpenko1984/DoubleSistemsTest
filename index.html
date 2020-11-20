@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Double Sistems test</title>
+    <style>
+        *{margin: 0.5vw}
+        textarea{
+            display: block;
+            width: 90vw;
+            height: 30vw;
+            resize: none;
+        }
+        input{
+            display: block;
+            height: 2vw;
+            width: 20vw;
+        }
+        button{
+            width: 10vw;
+            height: 2vw;
+            background: lightgrey;
+            color: dimgray;
+            font-weight: bolder;
+            border: none;
+            border-radius: 0.3vw;
+        }
+    </style>
+</head>
+<body style="display: flex;flex-direction: column;align-items: center;">
+<textarea name="" id="text" cols="30" rows="10" placeholder="Вставьте текст..."></textarea>
+<input type="text" id="input1" placeholder="Введите слово">
+<input type="text" id="input2" placeholder="Введите слово">
+<button id="btn" onclick="start('text','input1','input2')">СТАРТ</button>
+<script src="reader.js"></script>
+
+</body>
+</html>
